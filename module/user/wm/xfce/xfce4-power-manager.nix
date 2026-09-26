@@ -1,0 +1,32 @@
+{ ... }:
+{
+  home.file.".config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml" = {
+    enable = true;
+    force = true;
+    text = ''
+      <?xml version="1.1" encoding="UTF-8"?>
+
+      <channel name="xfce4-power-manager" version="1.0">
+        <property name="xfce4-power-manager" type="empty">
+          <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
+          <property name="brightness-switch" type="int" value="0"/>
+          <property name="power-button-action" type="uint" value="1"/>
+          <property name="lid-action-on-ac" type="uint" value="1"/>
+          <property name="critical-power-level" type="uint" value="20"/>
+          <property name="lid-action-on-battery" type="uint" value="1"/>
+          <property name="show-tray-icon" type="bool" value="false"/>
+          <property name="show-panel-label" type="int" value="1"/>
+          <property name="show-presentation-indicator" type="bool" value="true"/>
+          <property name="presentation-mode" type="bool" value="false"/>
+          <property name="inactivity-on-battery" type="uint" value="10"/>
+          <property name="inactivity-on-ac" type="uint" value="10"/>
+          <property name="brightness-on-battery" type="uint" value="9"/>
+          <property name="dpms-on-battery-sleep" type="uint" value="3"/>
+          <property name="dpms-on-battery-off" type="uint" value="5"/>
+          <property name="dpms-on-ac-sleep" type="uint" value="5"/>
+          <property name="dpms-on-ac-off" type="uint" value="10"/>
+        </property>
+      </channel>
+    '';
+  };
+}
