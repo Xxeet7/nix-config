@@ -275,6 +275,7 @@
         };
 
         todo-comments.enable = true;
+
         ccc = {
           enable = true;
           lazyLoad.settings.event = [
@@ -282,8 +283,10 @@
             "BufEnter"
           ];
         };
+
         #TODO: add this again sometime when nixpkgs not being a jerk for unfree stuff
         # faster.enable = true;
+
         auto-save = {
           enable = true;
           lazyLoad.settings.event = [
@@ -291,6 +294,7 @@
             "BufEnter"
           ];
         };
+
         comment-box = {
           enable = true;
           lazyLoad.settings.event = [
@@ -299,9 +303,11 @@
           ];
         };
         nerdy = {
+
           enable = true;
           enableTelescope = true;
         };
+
         showkeys = {
           enable = true;
           lazyLoad.settings.cmd = "ShowkeysToggle";
