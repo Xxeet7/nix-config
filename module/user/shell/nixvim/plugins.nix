@@ -302,8 +302,8 @@
             "BufEnter"
           ];
         };
-        nerdy = {
 
+        nerdy = {
           enable = true;
           enableTelescope = true;
         };
@@ -315,7 +315,14 @@
 
         neoclip.enable = true;
 
-	neogit.enable = true;
+        neogit = {
+          enable = true;
+          lazyLoad.settings.cmd = [
+            "Neogit"
+            "NeogitLogCurrent"
+            "NeogitCommit"
+          ];
+        };
       };
     };
 }
