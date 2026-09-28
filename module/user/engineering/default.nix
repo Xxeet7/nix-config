@@ -4,6 +4,8 @@
     android-tools
     zeal
     ungit
+
+    wakatime-cli
   ];
   programs = {
     ghostty = {
