@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.nixvim =
     { lib, ... }:
@@ -175,10 +175,11 @@
         blink-cmp = {
           enable = true;
           settings = {
-            # enabled.__raw = ''
-            #   	    function() return not vim.tbl_contains({
-            #   	    }, vim.bo.filetype) end
-            #   	    '';
+            enabled.__raw = ''
+                            	    function() return not vim.tbl_contains({
+              			    "typr"
+                            	    }, vim.bo.filetype) end
+                            	    '';
             cmdline.enabled = false;
             completion.menu.draw.columns.__raw =
               "{ { 'kind_icon' }, { 'label', 'label_description', gap = 1 }, { 'kind' } }";
@@ -324,8 +325,18 @@
           ];
         };
 
-	wakatime.enable = true;
+        wakatime.enable = true;
 
       };
+
+      extraPlugins = [
+        pkgs.vimPlugins.nvzone-typr
+      ];
+
+      extraConfigLua = ''
+                      require("typr").setup({
+        		      insert_on_start = true,
+                	      })
+      '';
     };
 }
