@@ -627,5 +627,25 @@
       };
     }
 
+    # typr actions
+    {
+      mode = [ "n" ];
+      key = "<leader>ott";
+      action = "<cmd>Typr<CR>";
+      options = {
+        silent = true;
+        desc = "Open typr";
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>ots";
+      action = "<cmd>TyprStats<CR>";
+      options = {
+        silent = true;
+        desc = "Open typr stats";
+      };
+    }
+
   ];
 }
