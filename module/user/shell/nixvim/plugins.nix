@@ -285,8 +285,7 @@
           ];
         };
 
-        #TODO: add this again sometime when nixpkgs not being a jerk for unfree stuff
-        # faster.enable = true;
+        faster.enable = true;
 
         auto-save = {
           enable = true;
