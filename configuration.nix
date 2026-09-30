@@ -2,7 +2,6 @@
   pkgs,
   inputs,
   lib,
-  allowedUnfree,
   ...
 }:
 
@@ -42,9 +41,8 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config = {
-    allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) allowedUnfree;
-  };
+  nixpkgs.config.allowUnfreePredicate = _: true;
+
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"

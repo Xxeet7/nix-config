@@ -25,15 +25,12 @@
     let
       lib = inputs.nixpkgs.lib;
       system = "x86_64-linux";
-      allowedUnfree = [
-      "faster.nvim"
-      ];
     in
     {
       nixosConfigurations = {
         neo = lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit inputs allowedUnfree; };
+          specialArgs = { inherit inputs; };
           modules = [
             ./configuration.nix
             inputs.stylix.nixosModules.stylix
@@ -42,7 +39,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = { inherit inputs allowedUnfree; };
+              home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.kling7 = ./home.nix;
               home-manager.sharedModules = [
                 inputs.nixvim.homeModules.nixvim
