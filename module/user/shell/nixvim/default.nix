@@ -14,6 +14,7 @@
         enable = true;
         defaultEditor = true;
         vimdiffAlias = true;
+	nixpkgs.config.allowUnfree = true;
 
         opts = {
           scrolloff = 10;
