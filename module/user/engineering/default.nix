@@ -5,6 +5,8 @@
     zeal
     ungit
 
+    android-studio
+
     wakatime-cli
   ];
   programs = {
