@@ -2,7 +2,7 @@
 {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/brewer.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/bright.yaml";
     image = pkgs.fetchurl {
       url = "https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/refs/heads/main/images/nord_dark_city.png";
       hash = "sha256-zFjU7ABvVJuuTeskLZanT35fzhwcaHKRU1Mka9PXlXo=";
