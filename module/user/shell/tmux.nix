@@ -9,16 +9,16 @@
       mouse = true;
       prefix = "C-a";
       clock24 = true;
-      # plugins = [
-      #   {
-      #     plugin = pkgs.tmuxPlugins.minimal-tmux-status;
-      #     extraConfig = ''
-      #       set -g @minimal-tmux-use-arrow true
-      #       set -g @minimal-tmux-right-arrow ""
-      #       set -g @minimal-tmux-left-arrow ""
-      #     '';
-      #   }
-      # ];
+      plugins = [
+        {
+          plugin = pkgs.tmuxPlugins.minimal-tmux-status;
+          extraConfig = ''
+            set -g @minimal-tmux-use-arrow true
+            set -g @minimal-tmux-right-arrow " "
+            set -g @minimal-tmux-left-arrow " "
+          '';
+        }
+      ];
       extraConfig = ''
         		bind x kill-pane
         		set -g status-position top
