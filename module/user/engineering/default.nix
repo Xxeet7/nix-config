@@ -8,6 +8,8 @@
     android-studio
 
     wakatime-cli
+
+    devenv
   ];
   programs = {
     ghostty = {
