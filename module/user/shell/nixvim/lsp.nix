@@ -5,12 +5,7 @@
     inlayHints.enable = false;
     servers = {
       jsonls.enable = true;
-      taplo.enable = true;
-      yamlls = {
-        enable = true;
-      };
-      # nix ls
-      nil_ls.enable = true;
+      yamlls.enable = true;
     };
   };
 
