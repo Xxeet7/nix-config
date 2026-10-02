@@ -136,42 +136,6 @@
     }
     {
       mode = [ "t" ];
-      key = "<M-n>";
-      action = "<cmd>FloatermNew<CR>";
-      options = {
-        silent = true;
-        desc = "New terminal";
-      };
-    }
-    {
-      mode = [ "t" ];
-      key = "<M-d>";
-      action = "<cmd>FloatermKill<CR>";
-      options = {
-        silent = true;
-        desc = "Kill terminal";
-      };
-    }
-    {
-      mode = [ "t" ];
-      key = "<M-j>";
-      action = "<cmd>FloatermNext<CR>";
-      options = {
-        silent = true;
-        desc = "Next terminal";
-      };
-    }
-    {
-      mode = [ "t" ];
-      key = "<M-k>";
-      action = "<cmd>FloatermPrev<CR>";
-      options = {
-        silent = true;
-        desc = "Previous terminal";
-      };
-    }
-    {
-      mode = [ "t" ];
       key = "<C-x>";
       action = "<C-\\><C-n>";
       options = {
