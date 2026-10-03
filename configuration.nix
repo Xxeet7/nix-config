@@ -48,5 +48,9 @@
     "flakes"
   ];
 
+  systemd.tmpfiles.rules = [
+    "d /mnt/Storage/ 0755 kling7 users - -"
+  ];
+
   system.stateVersion = "26.05";
 }

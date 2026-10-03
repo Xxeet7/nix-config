@@ -2,6 +2,7 @@
   pkgs,
   lib,
   allowedUnfree,
+  config,
   ...
 }:
 
@@ -32,4 +33,6 @@
       enable = true;
     };
   };
+
+  home.file."Storage".source = config.lib.file.mkOutOfStoreSymlink "/mnt/Storage";
 }
