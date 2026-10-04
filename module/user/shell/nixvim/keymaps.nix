@@ -565,29 +565,11 @@
     # neogit action
     {
       mode = [ "n" ];
-      key = "<leader>ond";
+      key = "<leader>on";
       action = "<cmd>Neogit<CR>";
       options = {
         silent = true;
-        desc = "Open neogit dashboard";
-      };
-    }
-    {
-      mode = [ "n" ];
-      key = "<leader>onc";
-      action = "<cmd>NeogitCommit<CR>";
-      options = {
-        silent = true;
-        desc = "Open neogit commit";
-      };
-    }
-    {
-      mode = [ "n" ];
-      key = "<leader>onl";
-      action = "<cmd>NeogitLogCurrent<CR>";
-      options = {
-        silent = true;
-        desc = "Open neogit log";
+        desc = "Open neogit";
       };
     }
 
