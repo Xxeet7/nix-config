@@ -6,6 +6,7 @@
       settings = {
         Browser = {
           Enabled = true;
+          UpdateBinaryPath = false;
         };
         General = {
           MinimizeAfterUnlock = true;
