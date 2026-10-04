@@ -314,6 +314,14 @@
 
         wakatime.enable = true;
 
+        sidekick = {
+          enable = true;
+          settings = {
+            nes.enabled = false;
+          };
+          lazyLoad.settings.cmd = "Sidekick";
+        };
+
       };
 
       extraPlugins = [
@@ -326,25 +334,25 @@
             rev = "fc2efaf25eeefcb33177d5807c0c745e125cf293";
             hash = "sha256-kTjE44pp02ZEJUp42p459l4WQA8oQ9SU8AuCxXFYm/k=";
           };
-	  doCheck = false;
+          doCheck = false;
         })
       ];
 
       extraConfigLua = ''
-        	      require("typr").setup({
-        		      insert_on_start = true,
-        		      })
-        	      require("floaterm").setup({
-			    border = true,
-        		    size = { h = 80, w = 80 },
-        		    mappings = {
-        		      term = function(buf)
-        			vim.keymap.set({ "n", "t" }, "<C-a>", function()
-        			  require("floaterm.api").new_term()
-        			end, { buffer = buf })
-        		      end,
-        		    },
-        		  })
+                	      require("typr").setup({
+                		      insert_on_start = true,
+                		      })
+                	      require("floaterm").setup({
+        			    border = true,
+                		    size = { h = 80, w = 80 },
+                		    mappings = {
+                		      term = function(buf)
+                			vim.keymap.set({ "n", "t" }, "<C-a>", function()
+                			  require("floaterm.api").new_term()
+                			end, { buffer = buf })
+                		      end,
+                		    },
+                		  })
       '';
     };
 }

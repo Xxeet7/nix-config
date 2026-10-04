@@ -593,5 +593,73 @@
       };
     }
 
+    # sidekick actions
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<C-.>";
+      action = "<cmd>Sidekick cli toggle<CR>";
+      options = {
+        silent = true;
+        desc = "Quick toggle sidekick window";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<leader>aa";
+      action = "<cmd>Sidekick cli toggle<CR>";
+      options = {
+        silent = true;
+        desc = "Toggle sidekick window";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<leader>at";
+      action = "<cmd>Sidekick cli send { msg = '{this}' }<CR>";
+      options = {
+        silent = true;
+        desc = "Send this to sidekick";
+      };
+    }
+    {
+      mode = [ "n" ];
+      key = "<leader>af";
+      action = "<cmd>Sidekick cli send { msg = '{file}' }<CR>";
+      options = {
+        silent = true;
+        desc = "Send this file to sidekick";
+      };
+    }
+    {
+      mode = [ "x" ];
+      key = "<leader>av";
+      action = "<cmd>Sidekick cli send { msg = '{selection}' }<CR>";
+      options = {
+        silent = true;
+        desc = "Send this visual selection to sidekick";
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<leader>ap";
+      action = "<cmd>Sidekick cli prompt<CR>";
+      options = {
+        silent = true;
+        desc = "Prompt select for sidekick";
+      };
+    }
+
   ];
 }
