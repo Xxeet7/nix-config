@@ -12,9 +12,13 @@
     devenv
   ];
   programs = {
-    ghostty = {
+    alacritty = {
       enable = true;
-      systemd.enable = true;
+      settings = {
+        window = {
+          startup_mode = "Maximized";
+        };
+      };
     };
     dbeaver = {
       enable = true;
