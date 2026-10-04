@@ -5,8 +5,6 @@
     zeal
     ungit
 
-    android-studio
-
     wakatime-cli
 
     devenv
