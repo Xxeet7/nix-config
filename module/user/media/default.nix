@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     pdf4qt
   ];
+  stylix.targets.anki.enable = false;
   programs = {
     foliate = {
       enable = true;
@@ -15,6 +16,7 @@
     anki = {
       enable = true;
       uiScale = 1.25;
+      theme = "dark";
       profiles.default = {
         default = true;
         sync = {
