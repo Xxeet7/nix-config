@@ -49,9 +49,14 @@
           "_GTK_FRAME_EXTENTS@:c"
           "name ?= 'xfwm4'"
           "name ?= 'xfwm4-wireframe'"
+          "_NET_WM_STATE@[*] = '_NET_WM_STATE_HIDDEN'"
         ];
         blur-background-exclude = [
           "class_g ?= 'zoom'"
+        ];
+        opacity-rule = [
+          "0:_NET_WM_STATE@[*] = '_NET_WM_STATE_HIDDEN'"
+          "100:_NET_WM_STATE@[*] = '_NET_WM_STATE_MAXIMIZED_VERT'"
         ];
       };
     };
