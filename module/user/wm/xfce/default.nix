@@ -2,6 +2,7 @@
 {
   imports = [
     ./pointers.nix
+    ./default-apps.nix
     ./thunar.nix
     ./xfce4-desktop.nix
     ./xfce4-keyboard-shortcuts.nix
