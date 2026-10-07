@@ -28,7 +28,6 @@
               <value type="int" value="12"/>
               <value type="int" value="6"/>
               <value type="int" value="15"/>
-              <value type="int" value="10"/>
               <value type="int" value="14"/>
               <value type="int" value="9"/>
               <value type="int" value="1"/>
@@ -60,6 +59,7 @@
           <property name="plugin-6" type="string" value="systray">
             <property name="square-icons" type="bool" value="true"/>
             <property name="known-legacy-items" type="array">
+              <value type="string" value="notes"/>
               <value type="string" value="fcitx5 tray window"/>
               <value type="string" value="gigolo"/>
               <value type="string" value="xfmpc"/>
@@ -212,7 +212,6 @@
               <property name="add-primary-clipboard" type="bool" value="true"/>
             </property>
           </property>
-          <property name="plugin-10" type="string" value="xfce4-notes-plugin"/>
           <property name="notes" type="empty">
             <property name="global" type="empty">
               <property name="version" type="string" value="1.12.0"/>
