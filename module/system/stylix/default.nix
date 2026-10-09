@@ -4,8 +4,8 @@
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/bright.yaml";
     image = pkgs.fetchurl {
-      url = "https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/refs/heads/main/images/nord_dark_city.png";
-      hash = "sha256-zFjU7ABvVJuuTeskLZanT35fzhwcaHKRU1Mka9PXlXo=";
+      url = "https://imgproxy.nanxiongnandi.com/NH7EiaJrLJg10eX3AQtVYKoig3rTm-nTdFH1Pcr_Rhg/w:1920/q:100/att:1/aHR0cHM6Ly9pbWcu/bmFueGlvbmduYW5k/aS5jb20vMjAyNjAx/L1doaXRlU2FuZHNO/TS5qcGc.jpg";
+      hash = "sha256-BE6xxpRekR9SS7ccKg8Hhp0p4vYF2lhX/nY6TlOKSGg=";
     };
     polarity = "dark";
     fonts = {
