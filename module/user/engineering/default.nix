@@ -8,8 +8,6 @@
     wakatime-cli
 
     devenv
-
-    android-studio
   ];
   programs = {
     alacritty = {
