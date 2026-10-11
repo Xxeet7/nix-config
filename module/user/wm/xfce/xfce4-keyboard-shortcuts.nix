@@ -55,6 +55,7 @@
             </property>
             <property name="&lt;Super&gt;comma" type="string" value="xfce4-settings-manager"/>
             <property name="&lt;Super&gt;v" type="string" value="xfce4-clipman-history"/>
+            <property name="&lt;Super&gt;x" type="string" value="xfce4-session-logout"/>
           </property>
         </property>
         <property name="xfwm4" type="empty">
@@ -121,24 +122,12 @@
             <property name="&lt;Super&gt;KP_Next" type="empty"/>
           </property>
           <property name="custom" type="empty">
-            <property name="&lt;Super&gt;KP_Down" type="string" value="tile_down_key"/>
-            <property name="&lt;Super&gt;KP_Up" type="string" value="tile_up_key"/>
             <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="string" value="move_window_left_key"/>
-            <property name="&lt;Super&gt;KP_Right" type="string" value="tile_right_key"/>
-            <property name="Right" type="string" value="right_key"/>
-            <property name="Down" type="string" value="down_key"/>
             <property name="&lt;Alt&gt;Tab" type="string" value="cycle_windows_key"/>
             <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="string" value="move_window_right_key"/>
-            <property name="&lt;Super&gt;KP_Page_Up" type="string" value="tile_up_right_key"/>
-            <property name="Up" type="string" value="up_key"/>
-            <property name="&lt;Super&gt;KP_Home" type="string" value="tile_up_left_key"/>
             <property name="Escape" type="string" value="cancel_key"/>
-            <property name="&lt;Super&gt;KP_Next" type="string" value="tile_down_right_key"/>
-            <property name="&lt;Super&gt;KP_Left" type="string" value="tile_left_key"/>
             <property name="&lt;Alt&gt;&lt;Shift&gt;Tab" type="string" value="cycle_reverse_windows_key"/>
             <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_key"/>
-            <property name="&lt;Super&gt;KP_End" type="string" value="tile_down_left_key"/>
-            <property name="Left" type="string" value="left_key"/>
             <property name="override" type="bool" value="true"/>
             <property name="&lt;Super&gt;q" type="string" value="close_window_key"/>
             <property name="&lt;Super&gt;f" type="string" value="maximize_window_key"/>
@@ -148,17 +137,44 @@
             <property name="&lt;Super&gt;3" type="string" value="workspace_3_key"/>
             <property name="&lt;Super&gt;4" type="string" value="workspace_4_key"/>
             <property name="&lt;Super&gt;5" type="string" value="workspace_5_key"/>
-            <property name="&lt;Shift&gt;&lt;Super&gt;Left" type="string" value="move_window_prev_workspace_key"/>
-            <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="move_window_next_workspace_key"/>
             <property name="&lt;Shift&gt;&lt;Super&gt;exclam" type="string" value="move_window_workspace_1_key"/>
             <property name="&lt;Shift&gt;&lt;Super&gt;at" type="string" value="move_window_workspace_2_key"/>
             <property name="&lt;Shift&gt;&lt;Super&gt;numbersign" type="string" value="move_window_workspace_3_key"/>
             <property name="&lt;Shift&gt;&lt;Super&gt;dollar" type="string" value="move_window_workspace_4_key"/>
             <property name="&lt;Shift&gt;&lt;Super&gt;percent" type="string" value="move_window_workspace_5_key"/>
-            <property name="&lt;Alt&gt;&lt;Super&gt;Up" type="string" value="up_workspace_key"/>
-            <property name="&lt;Alt&gt;&lt;Super&gt;Down" type="string" value="down_workspace_key"/>
-            <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="string" value="left_workspace_key"/>
-            <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="string" value="right_workspace_key"/>
+            <property name="&lt;Super&gt;Home" type="string" value="tile_up_left_key"/>
+            <property name="&lt;Super&gt;Page_Up" type="string" value="tile_up_right_key"/>
+            <property name="&lt;Super&gt;Page_Down" type="string" value="tile_down_left_key"/>
+            <property name="&lt;Super&gt;End" type="string" value="tile_down_right_key"/>
+            <property name="&lt;Super&gt;Up" type="string" value="tile_up_key"/>
+            <property name="&lt;Super&gt;Down" type="string" value="tile_down_key"/>
+            <property name="&lt;Super&gt;Left" type="string" value="tile_left_key"/>
+            <property name="&lt;Super&gt;Right" type="string" value="tile_right_key"/>
+            <property name="&lt;Alt&gt;&lt;Super&gt;k" type="string" value="up_workspace_key"/>
+            <property name="&lt;Alt&gt;&lt;Super&gt;j" type="string" value="down_workspace_key"/>
+            <property name="&lt;Alt&gt;&lt;Super&gt;h" type="string" value="left_workspace_key"/>
+            <property name="&lt;Alt&gt;&lt;Super&gt;l" type="string" value="right_workspace_key"/>
+            <property name="&lt;Alt&gt;&lt;Super&gt;p" type="string" value="prev_workspace_key"/>
+            <property name="&lt;Alt&gt;&lt;Super&gt;n" type="string" value="next_workspace_key"/>
+            <property name="&lt;Shift&gt;&lt;Super&gt;n" type="string" value="move_window_next_workspace_key"/>
+            <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="move_window_right_workspace_key"/>
+            <property name="&lt;Shift&gt;&lt;Super&gt;h" type="string" value="move_window_left_workspace_key"/>
+            <property name="&lt;Shift&gt;&lt;Super&gt;j" type="string" value="move_window_down_workspace_key"/>
+            <property name="&lt;Shift&gt;&lt;Super&gt;k" type="string" value="move_window_up_workspace_key"/>
+            <property name="&lt;Primary&gt;&lt;Super&gt;j" type="string" value="move_window_to_monitor_down_key"/>
+            <property name="&lt;Primary&gt;&lt;Super&gt;h" type="string" value="move_window_to_monitor_left_key"/>
+            <property name="&lt;Primary&gt;&lt;Super&gt;l" type="string" value="move_window_to_monitor_right_key"/>
+            <property name="&lt;Primary&gt;&lt;Super&gt;k" type="string" value="move_window_to_monitor_up_key"/>
+            <property name="F11" type="string" value="fullscreen_key"/>
+            <property name="k" type="string" value="up_key"/>
+            <property name="j" type="string" value="down_key"/>
+            <property name="h" type="string" value="left_key"/>
+            <property name="l" type="string" value="right_key"/>
+            <property name="&lt;Super&gt;bracketleft" type="string" value="move_window_key"/>
+            <property name="&lt;Super&gt;bracketright" type="string" value="resize_window_key"/>
+            <property name="&lt;Shift&gt;&lt;Super&gt;p" type="string" value="move_window_prev_workspace_key"/>
+            <property name="&lt;Super&gt;period" type="string" value="hide_window_key"/>
+            <property name="&lt;Alt&gt;Escape" type="string" value="popup_menu_key"/>
           </property>
         </property>
         <property name="providers" type="array">
