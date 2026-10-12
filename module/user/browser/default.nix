@@ -14,7 +14,6 @@
         { id = "jlmpjdjjbgclbocgajdjefcidcncaied"; } # Dailydev
         { id = "chphlpgkkbolifaimnlloiipkdnihall"; } # Onetab
         { id = "ddkjiahejlhfcafbddmgiahcphecmpfh"; } # UBlock origin lite
-        { id = "edacconmaakjimmfgnblocblbcdcpbko"; } # Session buddy
         { id = "dacakhfljjhgdfdlgjpabkkjhbpcmiff"; } # Varia (aria2)
         { id = "oboonakemofpalcgghocfoadofidjkkk"; } # Keepassxc
         { id = "ponfpcnoihfmfllpaingbgckeeldkhle"; } # Enchancer for youtube

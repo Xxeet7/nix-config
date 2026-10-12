@@ -17,6 +17,5 @@
     tome4
 
     tty-solitaire
-    ace-of-penguins
   ];
 }
