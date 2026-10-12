@@ -18,6 +18,10 @@
       url = "github:therealgramdalf/mindwtr-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-craftapps = {
+      url = "github:olafkfreund/nix-craftapps";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -43,6 +47,7 @@
               home-manager.users.kling7 = ./home.nix;
               home-manager.sharedModules = [
                 inputs.nixvim.homeModules.nixvim
+                inputs.nix-craftapps.homeManagerModules.default
               ];
             }
           ];
