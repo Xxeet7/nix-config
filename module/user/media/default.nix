@@ -1,7 +1,5 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    pdf4qt
-
     readest
   ];
   stylix.targets.anki.enable = false;
