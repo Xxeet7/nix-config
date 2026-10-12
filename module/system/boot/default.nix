@@ -2,6 +2,7 @@
 {
   boot = {
     loader = {
+      timeout = 0;
       grub = {
         enable = true;
         device = "nodev";
@@ -13,8 +14,10 @@
         canTouchEfiVariables = true;
       };
     };
+    plymouth.enable = true;
     kernelParams = [
       "quiet"
+      "nowatchdog"
       "loglevel=3"
       "udev.log_level=3"
       "rd.udev.log_level=3"
