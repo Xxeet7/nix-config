@@ -2,7 +2,6 @@
 {
   boot = {
     loader = {
-      timeout = 0;
       grub = {
         enable = true;
         device = "nodev";
