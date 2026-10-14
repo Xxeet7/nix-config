@@ -34,6 +34,9 @@
           ShikiCodeblocks = {
             enabled = true;
           };
+          Translate = {
+            enabled = true;
+          };
           MessageLogger = {
             enabled = true;
             ignoreSelf = true;
