@@ -6,8 +6,9 @@
     ./fish.nix
     ./lazygit.nix
     ./nixvim/default.nix
-    ./tmux.nix
+    # ./tmux.nix
     ./yazi.nix
+    ./zellij.nix
   ];
 
   home.packages = with pkgs; [
