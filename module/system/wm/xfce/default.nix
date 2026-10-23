@@ -12,7 +12,10 @@
   services = {
     xserver = {
       enable = true;
-      videoDrivers = [ "modesetting" ];
+      videoDrivers = [
+        "intel"
+        "modesetting"
+      ];
 
       xkb = {
         layout = "us";
@@ -57,6 +60,7 @@
         opacity-rule = [
           "0:_NET_WM_STATE@[*] = '_NET_WM_STATE_HIDDEN'"
           "100:_NET_WM_STATE@[*] = '_NET_WM_STATE_MAXIMIZED_VERT'"
+          "100:_NET_WM_STATE@[*] = '_NET_WM_STATE_FULLSCREEN'"
         ];
       };
     };
