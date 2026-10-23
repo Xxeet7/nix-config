@@ -23,7 +23,7 @@
         user.email = "2good4u991@gmail.com";
       };
     };
-    opencode = {
+    eza = {
       enable = true;
     };
     fd = {

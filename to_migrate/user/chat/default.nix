@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-  ayugram-desktop
+    ayugram-desktop
   ];
   programs = {
     vesktop = {

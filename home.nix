@@ -28,11 +28,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
 
-  programs = {
-    home-manager = {
-      enable = true;
-    };
-  };
+  programs.home-manager.enable = true;
 
   home.file."Storage".source = config.lib.file.mkOutOfStoreSymlink "/mnt/Storage";
 }
