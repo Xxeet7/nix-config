@@ -1,19 +1,20 @@
+# DO-NOT-EDIT. This file was auto-generated using github:denful/flake-file.
+# Use `nix run .#write-flake` to regenerate it.
 {
-  description = "My nix configs";
+  outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
 
   inputs = {
-    nixpkgs.url = "github:NixOs/nixpkgs/nixos-unstable";
+    den.url = "github:denful/den";
+    flake-file.url = "github:vic/flake-file";
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nixvim = {
-      url = "github:nix-community/nixvim";
-    };
+    import-tree.url = "github:denful/import-tree";
     mindwtr-flake = {
       url = "github:therealgramdalf/mindwtr-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,36 +23,11 @@
       url = "github:olafkfreund/nix-craftapps";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
-
-  outputs =
-    inputs:
-    let
-      lib = inputs.nixpkgs.lib;
-      system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations = {
-        neo = lib.nixosSystem {
-          inherit system;
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./configuration.nix
-            inputs.stylix.nixosModules.stylix
-            inputs.mindwtr-flake.nixosModules.default
-            inputs.home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = { inherit inputs; };
-              home-manager.users.kling7 = ./home.nix;
-              home-manager.sharedModules = [
-                inputs.nixvim.homeModules.nixvim
-                inputs.nix-craftapps.homeManagerModules.default
-              ];
-            }
-          ];
-        };
-      };
+    nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst";
+    nixvim.url = "github:nix-community/nixvim";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
+  };
 }

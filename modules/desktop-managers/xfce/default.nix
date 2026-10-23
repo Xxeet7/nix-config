@@ -1,0 +1,88 @@
+{ den, ... }:
+{
+  den.aspects.xfce = {
+    includes = with den.aspects; [
+      greeter
+
+      xfce_default_apps
+      xfce_pointers
+      xfce_thunar
+      xfce_keyboard_shortcuts
+      xfce_panel
+      xfce_power_manager
+      xfce_screensaver
+      xfce_taskmanager
+      xfce_terminal
+      xfce_xfwm
+    ];
+    nixos =
+      { pkgs, lib, ... }:
+      {
+        lib.stylix.targets.xfce.enable = true;
+        environment.systemPackages = with pkgs; [
+          xfce4-whiskermenu-plugin
+          xfce4-clipman-plugin
+          xfce4-cpugraph-plugin
+          xfce4-notes-plugin
+
+          libnotify
+        ];
+        services = {
+          xserver = {
+            enable = true;
+            videoDrivers = [
+              "intel"
+              "modesetting"
+            ];
+
+            xkb = {
+              layout = "us";
+              options = "eurosign:e,caps:escape";
+            };
+
+            desktopManager = {
+              xfce = {
+                enable = true;
+              };
+            };
+          };
+
+          displayManager = {
+            defaultSession = "xfce";
+          };
+
+          picom = {
+            enable = true;
+            fade = true;
+            inactiveOpacity = 0.9;
+            shadow = true;
+            fadeDelta = 4;
+            # vSync = true;
+            backend = "glx";
+            settings = {
+              corner-radius = 0;
+              unredir-if-possible = true;
+              shadow-exclude = [
+                "name = 'cpt_frame_xcb_window'"
+                "class_g ?= 'zoom'"
+                "name = 'Notification'"
+                "class_g = 'Xfce4-notifyd'"
+                "_GTK_FRAME_EXTENTS@:c"
+                "name ?= 'xfwm4'"
+                "name ?= 'xfwm4-wireframe'"
+                "_NET_WM_STATE@[*] = '_NET_WM_STATE_HIDDEN'"
+              ];
+              blur-background-exclude = [
+                "class_g ?= 'zoom'"
+              ];
+              opacity-rule = [
+                "0:_NET_WM_STATE@[*] = '_NET_WM_STATE_HIDDEN'"
+                "100:_NET_WM_STATE@[*] = '_NET_WM_STATE_MAXIMIZED_VERT'"
+                "100:_NET_WM_STATE@[*] = '_NET_WM_STATE_FULLSCREEN'"
+              ];
+            };
+          };
+        };
+      };
+  };
+}
