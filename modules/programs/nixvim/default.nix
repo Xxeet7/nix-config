@@ -13,15 +13,16 @@
       nixvim_keymaps
       nixvim_lsp
       nixvim_plugins
+
+      yazi
     ];
     homeManager = {
       imports = [
-        (inputs.nixvim.homeModules.nixvim or { })
+        inputs.nixvim.homeModules.nixvim
       ];
 
       programs = {
         nixvim =
-          { lib, ... }:
           {
             enable = true;
             defaultEditor = true;

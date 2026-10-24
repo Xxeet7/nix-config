@@ -14,33 +14,6 @@ in
       tlp
       font
       network
-
-      xfce
-
-      stylix
-
-      geoclue
-      redshift
-      syncthing
-
-      browser
-      chat
-      engineering
-      fcitx5
-      games
-      internet
-      localsend
-      media
-      mindwtr
-      nixvim
-      office
-      recording
-      secret
-      shell
-      fish
-      lazygit
-      zellij
-      yazi
     ];
 
     # host NixOS configuration
