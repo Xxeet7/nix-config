@@ -6,4 +6,9 @@
     {
       packages = den.lib.nh.denPackages { fromFlake = true; } pkgs;
     };
+
+  den.default.nixos = {
+    programs.nh.enable = true;
+    programs.nh.clean.enable = true;
+  };
 }
