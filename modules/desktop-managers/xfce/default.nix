@@ -26,6 +26,7 @@
           xfce4-notes-plugin
 
           libnotify
+          xsel
         ];
         services = {
           xserver = {
