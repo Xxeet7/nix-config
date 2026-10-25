@@ -8,7 +8,14 @@
     };
 
   den.default.nixos = {
-    programs.nh.enable = true;
-    programs.nh.clean.enable = true;
+    programs = {
+      nh = {
+        enable = true;
+        clean = {
+          enable = true;
+          extraArgs = "--keep 5 --keep-since 3d";
+        };
+      };
+    };
   };
 }
