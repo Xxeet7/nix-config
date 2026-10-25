@@ -1,7 +1,7 @@
 {
   den.aspects.redshift = {
     homeManager =
-      { ... }:
+      _:
       {
         services = {
           redshift = {

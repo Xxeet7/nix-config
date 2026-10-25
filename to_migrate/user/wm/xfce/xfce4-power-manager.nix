@@ -1,4 +1,4 @@
-{ ... }:
+_:
 {
   home.file.".config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml" = {
     enable = true;

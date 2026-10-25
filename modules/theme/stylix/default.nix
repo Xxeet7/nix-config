@@ -9,7 +9,7 @@
 
   den.aspects.stylix = {
     nixos =
-      { pkgs, config, ... }:
+      { pkgs, ... }:
       {
         imports = [
           (inputs.stylix.nixosModules.stylix or { })

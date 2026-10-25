@@ -1,7 +1,7 @@
 {
   den.aspects.audio = {
     nixos =
-      { ... }:
+      _:
       {
         security.rtkit.enable = true;
         services = {

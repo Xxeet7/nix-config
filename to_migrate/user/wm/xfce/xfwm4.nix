@@ -1,4 +1,4 @@
-{ ... }:
+_:
 {
   home.file.".config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml" = {
     enable = true;

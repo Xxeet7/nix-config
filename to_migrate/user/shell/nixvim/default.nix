@@ -9,7 +9,7 @@
   ];
   programs = {
     nixvim =
-      { lib, ... }:
+      _:
       {
         enable = true;
         defaultEditor = true;

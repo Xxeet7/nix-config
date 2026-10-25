@@ -1,7 +1,7 @@
 {
   den.aspects.boot = {
     nixos =
-      { ... }:
+      _:
       {
         boot = {
           loader = {

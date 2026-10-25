@@ -1,7 +1,7 @@
 {
   den.aspects.greeter = {
     nixos =
-      { ... }:
+      _:
       {
         services = {
           xserver = {

@@ -16,7 +16,7 @@
       xfce_xfwm
     ];
     nixos =
-      { pkgs, lib, ... }:
+      { pkgs, ... }:
       {
         lib.stylix.targets.xfce.enable = true;
         environment.systemPackages = with pkgs; [
