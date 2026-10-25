@@ -8,9 +8,10 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [
-  	pkgs.git
-	pkgs.nixfmt
+  packages = with pkgs; [
+    git
+    nixfmt
+    yaml-language-server
   ];
 
   # https://devenv.sh/languages/

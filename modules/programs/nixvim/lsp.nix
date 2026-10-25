@@ -1,3 +1,11 @@
+let
+  # run lsp from devenv
+  enabled = {
+    enable = true;
+    package = null;
+    packageFallback = true;
+  };
+in
 {
   den.aspects.nixvim_lsp = {
     homeManager = {
@@ -5,8 +13,10 @@
         codelens.enable = true;
         inlayHints.enable = false;
         servers = {
-          jsonls.enable = true;
-          yamlls.enable = true;
+          jsonls = enabled;
+          yamlls = enabled;
+          nixd = enabled;
+
         };
       };
 
