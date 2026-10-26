@@ -18,6 +18,7 @@ in
       geoclue
       redshift
       syncthing
+      automatic-timezoned
 
       browser
       chat
@@ -33,6 +34,8 @@ in
       localsend
       mindwtr
       obs
+
+      steam
     ];
 
     user = {
@@ -42,13 +45,14 @@ in
     };
 
     homeManager =
-      { pkgs, ... }:
+      { pkgs, config, ... }:
       {
         home.packages = with pkgs; [
           proton-vpn
           android-tools
           wakatime-cli
         ];
+        home.file."Storage".source = config.lib.file.mkOutOfStoreSymlink "/mnt/Storage";
       };
 
     # user can provide NixOS configurations

@@ -6,6 +6,9 @@
         default_layout = "welcome";
         default_mode = "locked";
         show_startup_tips = false;
+        pane_frame_style = "full";
+        stacked_pane_list = false;
+        simplified_ui = true;
       };
       extraConfig = ''
         keybinds clear-defaults=true {
