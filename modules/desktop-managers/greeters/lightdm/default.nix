@@ -1,5 +1,5 @@
 {
-  den.aspects.greeter = {
+  den.aspects.lightdm = {
     nixos =
       _:
       {

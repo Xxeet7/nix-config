@@ -2,7 +2,7 @@
 {
   den.aspects.xfce = {
     includes = with den.aspects; [
-      greeter
+      lightdm
 
       xfce_default_apps
       xfce_pointers
