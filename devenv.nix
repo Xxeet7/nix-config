@@ -10,9 +10,15 @@
   # https://devenv.sh/packages/
   packages = with pkgs; [
     git
-    nixfmt
     yaml-language-server
   ];
+
+  treefmt = {
+    enable = true;
+    config.programs = {
+      nixfmt.enable = true;
+    };
+  };
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
@@ -48,7 +54,11 @@
   '';
 
   # https://devenv.sh/git-hooks/
-  # git-hooks.hooks.shellcheck.enable = true;
+  git-hooks.hooks = {
+    deadnix.enable = true;
+    statix.enable = true;
+    treefmt.enable = true;
+  };
 
   # See full reference at https://devenv.sh/reference/options/
 }
