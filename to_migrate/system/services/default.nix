@@ -1,5 +1,4 @@
-_:
-{
+_: {
   services = {
     geoclue2 = {
       enable = true;

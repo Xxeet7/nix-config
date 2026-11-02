@@ -1,17 +1,15 @@
 {
   den.aspects.lightdm = {
-    nixos =
-      _:
-      {
-        services = {
-          xserver = {
-            displayManager = {
-              lightdm = {
-                enable = true;
-              };
+    nixos = _: {
+      services = {
+        xserver = {
+          displayManager = {
+            lightdm = {
+              enable = true;
             };
           };
         };
       };
+    };
   };
 }

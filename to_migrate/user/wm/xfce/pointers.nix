@@ -1,9 +1,8 @@
-_:
-{
+_: {
   home.file.".config/xfce4/xfconf/xfce-perchannel-xml/pointers.xml" = {
     enable = true;
     force = true;
-#HACK this is hardcoded hardware
+    #HACK this is hardcoded hardware
     text = ''
       <?xml version="1.1" encoding="UTF-8"?>
 

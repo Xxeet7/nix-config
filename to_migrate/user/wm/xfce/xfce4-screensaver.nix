@@ -1,5 +1,4 @@
-_:
-{
+_: {
   home.file.".config/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml" = {
     enable = true;
     force = true;

@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [
-  ./xfce/default.nix
+    ./xfce/default.nix
   ];
 }

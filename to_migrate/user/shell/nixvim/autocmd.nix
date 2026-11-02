@@ -1,5 +1,4 @@
-_:
-{
+_: {
   programs.nixvim.autoGroups = {
     highlight_yank = { };
   };

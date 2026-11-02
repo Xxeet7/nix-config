@@ -1,5 +1,4 @@
-_:
-{
+_: {
   services = {
     asusd = {
       enable = true;

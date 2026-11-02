@@ -1,13 +1,11 @@
 {
   den.aspects.syncthing = {
-    homeManager =
-      _:
-      {
-        services = {
-          syncthing = {
-            enable = true;
-          };
+    homeManager = _: {
+      services = {
+        syncthing = {
+          enable = true;
         };
       };
+    };
   };
 }

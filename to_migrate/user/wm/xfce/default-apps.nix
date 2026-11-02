@@ -1,5 +1,4 @@
-_:
-{
+_: {
   home.file.".config/xfce4/helpers.rc" = {
     enable = true;
     force = true;

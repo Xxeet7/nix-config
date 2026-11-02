@@ -1,5 +1,4 @@
-_:
-{
+_: {
   home.file.".config/xfce4/xfconf/xfce-perchannel-xml/xfce4-taskmanager.xml" = {
     enable = true;
     force = true;
