@@ -63,6 +63,19 @@ in
 
         home.file."Storage".source = config.lib.file.mkOutOfStoreSymlink "/mnt/Storage";
 
+        programs = {
+          chromium = {
+            extensions = [
+              { id = "ponfpcnoihfmfllpaingbgckeeldkhle"; } # Enchancer for youtube
+              { id = "fmiaojphifnoicpdhhcniiekcpfbkidj"; } # Monochrome mode
+              { id = "dladanhaondcgpahgiflodhckhoeohoe"; } # Intention
+              { id = "fccbnilmkfoeamilfnaannjjocnnigio"; } # With Intention
+              { id = "nfghbmabdoakhobmimnjkamfdnpfammn"; } # Focused youtube
+              { id = "mndghaafpgiinfecbbbcppppiblmjepk"; } # Free game claimer
+              { id = "ocmmbfdhomnkljmjkmafegefcgcfkefo"; } # MS Reward automizer
+            ];
+          };
+        };
       };
 
     # user can provide NixOS configurations

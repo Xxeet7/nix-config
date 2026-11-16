@@ -11,12 +11,7 @@
             { id = "ddkjiahejlhfcafbddmgiahcphecmpfh"; } # UBlock origin lite
             { id = "dacakhfljjhgdfdlgjpabkkjhbpcmiff"; } # Varia (aria2)
             { id = "oboonakemofpalcgghocfoadofidjkkk"; } # Keepassxc
-            { id = "ponfpcnoihfmfllpaingbgckeeldkhle"; } # Enchancer for youtube
             { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; } # Dark reader
-            { id = "fmiaojphifnoicpdhhcniiekcpfbkidj"; } # Monochrome mode
-            { id = "dladanhaondcgpahgiflodhckhoeohoe"; } # Intention
-            { id = "fccbnilmkfoeamilfnaannjjocnnigio"; } # With Intention
-            { id = "nfghbmabdoakhobmimnjkamfdnpfammn"; } # Focused youtube
           ];
           commandLineArgs = [
             "--password-store=basic"
