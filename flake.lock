@@ -419,7 +419,8 @@
         "nix-craftapps": "nix-craftapps",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "ytm-rs": "ytm-rs"
       }
     },
     "stylix": {
@@ -586,6 +587,26 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "ytm-rs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794800935,
+        "narHash": "sha256-daNY67f5OTqw3N7nsKW8SrrSLayUefDqnpedsbpAeXA=",
+        "owner": "grapedjuice",
+        "repo": "ytm-rs",
+        "rev": "c1e9803bbc53cb44d435e4820c71aef75e8415ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "grapedjuice",
+        "repo": "ytm-rs",
         "type": "github"
       }
     }

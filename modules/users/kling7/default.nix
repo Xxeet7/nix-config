@@ -36,6 +36,7 @@ in
       obs
 
       steam
+      ytm-rs
     ];
 
     user = {

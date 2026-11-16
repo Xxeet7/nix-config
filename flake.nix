@@ -29,5 +29,9 @@
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ytm-rs = {
+      url = "github:grapedjuice/ytm-rs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }
