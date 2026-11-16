@@ -37,12 +37,19 @@ in
 
       steam
       ytm-rs
+      flatpak
     ];
 
     user = {
       createHome = true;
       initialPassword = "test"; # change this after login
       isNormalUser = true;
+    };
+
+    nixos = {
+      services.flatpak.packages = [
+        "org.vinegarhq.Sober"
+      ];
     };
 
     homeManager =
@@ -53,7 +60,9 @@ in
           android-tools
           wakatime-cli
         ];
+
         home.file."Storage".source = config.lib.file.mkOutOfStoreSymlink "/mnt/Storage";
+
       };
 
     # user can provide NixOS configurations

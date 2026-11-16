@@ -23,6 +23,7 @@
       url = "github:olafkfreund/nix-craftapps";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst";
     nixvim.url = "github:nix-community/nixvim";
     stylix = {
